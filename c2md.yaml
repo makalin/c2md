@@ -1,0 +1,50 @@
+# c2md Configuration File
+# Universal Markdown Converter Settings
+
+# Output format
+to: gfm                    # md | gfm | commonmark
+
+# Text wrapping
+wrap: soft                 # none | soft | hard
+width: 100                 # Line width for hard wrapping
+
+# Front matter
+frontmatter: yaml          # yaml | json | none
+
+# Heading formatting
+slug: github               # github | kebab | none
+
+# Table formatting
+tables: grid               # simple | grid | pipe | auto
+
+# Image handling
+images:
+  mode: download           # keep | download | inline
+  assets_dir: assets       # Directory for downloaded images
+
+# PDF processing
+pdf:
+  layout: smart            # auto | raw | smart
+
+# OCR settings
+ocr:
+  enabled: false           # Enable OCR for scanned documents
+  lang: eng                # Language codes (e.g., eng+tur)
+
+# Math rendering
+math:
+  mode: auto               # auto | katex | none
+
+# Batch processing
+batch:
+  jobs: auto               # Number of parallel workers (auto = CPU cores)
+
+# File patterns to ignore
+ignore:
+  - "**/node_modules/**"
+  - "**/.git/**"
+  - "**/.*"
+  - "**/*.tmp"
+  - "**/*.temp"
+  - "**/*.bak"
+  - "**/*.backup"
